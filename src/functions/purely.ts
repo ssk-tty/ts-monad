@@ -5,7 +5,8 @@ export class PurelyFunctions {
   static id = <T>(v: T): T => v;
 
   static removeKey = <T, K extends keyof T>(obj: T, key: K): Omit<T, K> => {
-    const {[key]: _removed, ...res} = obj
+    const {[key]: _removed, ...res} = obj;
+
     return res as Omit<T, K>;
   };
 
