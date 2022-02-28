@@ -1,4 +1,5 @@
 # ts-monad
+monads and some purely functions  
 
 ## Getting Started
 ### 0º set node
