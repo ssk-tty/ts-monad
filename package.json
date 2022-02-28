@@ -6,9 +6,13 @@
   "author": "tatsuya sasaki <sasaki@neopa.jp>",
   "license": "MIT",
   "dependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "test": "./node_modules/.bin/jest"
   }
 }

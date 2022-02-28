@@ -7,7 +7,7 @@ export class PurelyFunctions {
   static removeKey = <T, K extends keyof T>(obj: T, key: K): Omit<T, K> => {
     const {[key]: _removed, ...res} = obj
     return res as Omit<T, K>;
-  }
+  };
 
   /**
    * regenerate object
