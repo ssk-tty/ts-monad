@@ -1,0 +1,11 @@
+root = true
+
+# Matches any files
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+
+# Matches specific files
+[{*.js, *.ts}]
+indent_size = 2
