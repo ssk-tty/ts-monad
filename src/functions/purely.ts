@@ -14,9 +14,8 @@ export class PurelyFunctions {
    * regenerate object
    * if a key is found in value, it will be replaced with newValue
    */
-  // @ts-ignore
   static regenerate = <T>(key: keyof T, newValue: Partial<T>) => (obj: T): T => ({
-    [key]: newValue[key] ?? obj[key],
+    ...{[key]: newValue[key] ?? obj[key]} as Pick<T, keyof T>,
     ...PurelyFunctions.removeKey<T, typeof key>(obj, key),
-  });
+  } );
 }
