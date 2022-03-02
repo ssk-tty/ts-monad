@@ -1,4 +1,4 @@
-import {IdentityMonad} from '../src/identityMonad';
+import {IdentityMonad} from '../../src/monads/identityMonad';
 
 // for test
 const add = (n: number) => (m: number) => n + m;

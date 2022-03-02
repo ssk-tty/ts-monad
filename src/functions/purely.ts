@@ -4,6 +4,9 @@ export class PurelyFunctions {
    */
   static id = <T>(v: T): T => v;
 
+  /**
+   * remove a key-value pair from obj
+   */
   static removeKey = <T, K extends keyof T>(obj: T, key: K): Omit<T, K> => {
     const {[key]: _removed, ...res} = obj;
 
@@ -12,7 +15,7 @@ export class PurelyFunctions {
 
   /**
    * regenerate object
-   * if a key is found in value, it will be replaced with newValue
+   * if a key is found in obj, the value will be replaced with newValue
    */
   static regenerate = <T>(key: keyof T, newValue: Partial<T>) => (obj: T): T => ({
     ...{[key]: newValue[key] ?? obj[key]} as Pick<T, keyof T>,
