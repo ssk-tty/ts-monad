@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:ssk-tty/ts-monad.git",
-  "author": "tatsuya sasaki <sasaki@neopa.jp>",
+  "author": "tatsuya sasaki",
   "license": "MIT",
   "dependencies": {
     "@types/jest": "^27.4.1",
